@@ -6,9 +6,9 @@ name: First FastAPI App
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+    branches: none #[ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches: none #[ "main" ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -25,6 +25,6 @@ jobs:
       # Runs a single command using the runners shell!
       - name: Build and push image
         run: |
-          echo "{{ secrets.DOCKERPW }}" | docker login -u "8950539357" --password-stdin
+          #echo "{{ secrets.DOCKERPW }}" | docker login -u "8950539357" --password-stdin
           docker build -t 8950539357/secondfastapiapp:v1 .
           docker push 8950539357/secondfastapiapp:v1
