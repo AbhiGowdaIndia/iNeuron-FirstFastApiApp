@@ -27,6 +27,6 @@ jobs:
       # Runs a single command using the runners shell!
       - name: Build and push image
         run: |
-          echo "{{ secrets.DOCKERPW }}" | docker login -u "8950539357" -p "Abhi@9995"
+          docker login -u "8950539357" -p "Abhi@9995"
           docker build -t 8950539357/secondfastapiapp:v1 .
           docker push 8950539357/secondfastapiapp:v1
