@@ -24,4 +24,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build and push image
-        run: echo Hello, world!
+        run: |
+          echo ""{{ secrets.DOCKERPW }}" | docker logib -u "8950539357" --password-stdin
+          docker build -t secondfastapiapp:v1
+          docker push 8950539357/secondfastapiapp:v1
