@@ -22,7 +22,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
+      # Runs a single command using the runners shell!
       - name: Build and push image
         run: |
           echo "{{ secrets.DOCKERPW }}" | docker login -u "8950539357" --password-stdin
