@@ -17,3 +17,5 @@ if __name__ == "__main__":
 
 # command to run the app
 # uvicorn main:app --reload
+
+# workflow added to automate the process
