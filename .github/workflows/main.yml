@@ -2,7 +2,7 @@
 
 name: First FastAPI App
 
-ENV:
+env:
     SECRETS_KEY : ${{secrets.DOCKERPW}}
 
 # Controls when the workflow will run
