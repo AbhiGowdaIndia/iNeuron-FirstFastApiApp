@@ -7,3 +7,5 @@ It contains the complet code for the application
 It contains the list of the necessary libraries required for the application.
 ## 3.Dockerfile
 It is a must needed file to build the docker image
+## 4.main.yml
+This is the file which is required to build and push the docker image to the docker hub.
