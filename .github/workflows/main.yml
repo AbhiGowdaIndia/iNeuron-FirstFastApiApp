@@ -28,6 +28,6 @@ jobs:
       # Runs a single command using the runners shell!
       - name: Build and push image
         run: |
-          docker login -u "8950539357" -p SECRETS_KEY
+          docker login -u "8950539357" -p "$SECRETS_KEY"
           docker build -t 8950539357/secondfastapiapp:v1 .
           docker push 8950539357/secondfastapiapp:v1
